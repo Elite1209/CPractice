@@ -1702,7 +1702,7 @@
 //     printf("Enter the value of radius\n");
 //     scanf("%d",&n);
 //     float area = pi*square(n);
-//     printf("The are is %f \n",area);
+//     printf("The are is %.3f \n",area);
     
 
 // return 0;
