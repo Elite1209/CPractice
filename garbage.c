@@ -1652,3 +1652,58 @@
 
 //     return 0;
 // }
+/////////////////////////////////////////////program to seperate the odd and even elements of an array //////////////////////////////
+////////////////////////////////////////////////Can be used for integer array also //////////////////////////////////////////////////
+
+// #include <stdio.h>
+// #include <string.h>
+// void seperate_elements(char str[])
+// {
+//     for (int i = 0; i < strlen(str); i++)
+//     {
+//         if (i % 2 == 0)
+//         {
+//             printf("%c", str[i]);
+//         }
+//     }
+//     printf(" ");
+//     for (int i = 0; i < strlen(str); i++)
+//     {
+//         if (i % 2 != 0)
+//         {
+//             printf("%c", str[i]);
+//         }
+//     }
+//     printf("\n");
+// }
+// int main()
+// {
+
+//     int n;
+//     char string[55];
+//     printf("Enter the number of string you want to enter \n");
+//     scanf("%d", &n);
+//     printf("Enter you string\n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%s", string);
+//         seperate_elements(string);
+//     }
+
+//     return 0;
+// }
+///////////////////////////////////////preprocessor directives////////////////////////
+// #include<stdio.h>
+// #define pi 3.14 
+// #define square(x) x*x 
+
+// int main (){
+//     int n;
+//     printf("Enter the value of radius\n");
+//     scanf("%d",&n);
+//     float area = pi*square(n);
+//     printf("The are is %f \n",area);
+    
+
+// return 0;
+// }
