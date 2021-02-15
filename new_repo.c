@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
-     int n 
+     int n;
+     printf("The name is \n");
     return 0;
 }
