@@ -1694,20 +1694,16 @@
 // }
 ///////////////////////////////////////preprocessor directives////////////////////////
 // #include<stdio.h>
-<<<<<<< HEAD
 // #define pi 3.14
 // #define square(x) x*x
-=======
 // #define pi 3.14 
 // #define square(x) x*x 
->>>>>>> f84c0ceaf43afcc30e34fbd41dfc469187894fa3
 
 // int main (){
 //     int n;
 //     printf("Enter the value of radius\n");
 //     scanf("%d",&n);
 //     float area = pi*square(n);
-<<<<<<< HEAD
 //     printf("The are is %f \n",area);
 
 // return 0;
@@ -1774,10 +1770,8 @@
 
 //     return 0;
 // }
-=======
 //     printf("The are is %.3f \n",area);
     
 
 // return 0;
 // }
->>>>>>> f84c0ceaf43afcc30e34fbd41dfc469187894fa3
