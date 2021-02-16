@@ -1652,3 +1652,119 @@
 
 //     return 0;
 // }
+/////////////////////////////////////////////program to seperate the odd and even elements of an array //////////////////////////////
+////////////////////////////////////////////////Can be used for integer array also //////////////////////////////////////////////////
+
+// #include <stdio.h>
+// #include <string.h>
+// void seperate_elements(char str[])
+// {
+//     for (int i = 0; i < strlen(str); i++)
+//     {
+//         if (i % 2 == 0)
+//         {
+//             printf("%c", str[i]);
+//         }
+//     }
+//     printf(" ");
+//     for (int i = 0; i < strlen(str); i++)
+//     {
+//         if (i % 2 != 0)
+//         {
+//             printf("%c", str[i]);
+//         }
+//     }
+//     printf("\n");
+// }
+// int main()
+// {
+
+//     int n;
+//     char string[55];
+//     printf("Enter the number of string you want to enter \n");
+//     scanf("%d", &n);
+//     printf("Enter you string\n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%s", string);
+//         seperate_elements(string);
+//     }
+
+//     return 0;
+// }
+///////////////////////////////////////preprocessor directives////////////////////////
+// #include<stdio.h>
+// #define pi 3.14
+// #define square(x) x*x
+
+// int main (){
+//     int n;
+//     printf("Enter the value of radius\n");
+//     scanf("%d",&n);
+//     float area = pi*square(n);
+//     printf("The are is %f \n",area);
+
+// return 0;
+// }
+///////////////////////////////////Predefined Macros////////////////////////////////
+// #include<stdio.h>
+// int main (){
+
+//     printf("File Name is %s\n",__FILE__);
+// printf("Todays date is %s\n",__DATE__);
+//     printf("The current time is %s\n",__TIME__);
+//     printf("Line No. is %d\n",__LINE__);
+//     printf("IF the compiler is according to ANSI it will return 1 : %d\n",__STDC__);
+
+// return 0;
+// }
+///////////////////////////Standard Function for file pointer in stdio.h/////////////////////////////
+// fscanf(pointer,format_specifier,address);
+// fprintf(pointer,string_literal,format_specifier);
+//////////////////////Reading Character from text file////////////////
+// #include<stdio.h>
+// int main (){
+
+//     FILE *ptr = NULL;
+//     ptr = fopen("bablu.txt","r");
+//     // fprintf(ptr,"This is the content of the file ");
+//     char c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//This will read the first character
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//This will read from onwards
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//Now if I close the file it would reading from starting because i freed the pointer by closing the file
+//     fclose(ptr);
+//     ptr = fopen("bablu.txt","r");
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//it will start reading from the first character
+
+// return 0;
+// }
+///////////////////////////////////////////////////////////Function Pointers ///////////////////////////////////////////////////////
+// #include <stdio.h>
+// int average(int a, int b)
+// {
+//     return (a*b);
+// }
+// void GoodEveningAndExecute(int (*ptr)(int, int))
+// {
+//     printf("Good Evening Sir\n");
+//     printf("The product of 5 and 8 is %d\n", ptr(5, 8));
+// }
+// void GoodNightAndExecute(int (*ptr)(int, int))
+// {
+//     printf("Good Night Sir\n");
+//     printf("The product of 5 and 8 is %d\n", ptr(5, 8));
+// }
+// int main()
+// {
+//     int (*ptr)(int, int);
+//     ptr = average;
+//     GoodEveningAndExecute(ptr);
+//     GoodNightAndExecute(ptr);
+
+//     return 0;
+// }
