@@ -2210,3 +2210,375 @@
 //     printf(" Reverse of the string is : %s\n\n",revstr);
 //     return 0;
 // }
+
+// ///////////////////////////////////////////////////////////////////////Program to make a html parser ////////////////////////////////////////////////////
+
+// #include<stdio.h>
+// #include<string.h>
+// void parser(char * string)
+// {
+//     int in = 0;
+//     int index = 0;
+//     for (int i = 0; i < strlen(string); i++)
+//     {
+//         if (string[i] == '<')
+//         {
+//             in = 1;
+//             continue;
+//         }
+//         else if (string[i] == '>')
+//         {
+//             in = 0;
+//             continue;
+//         }
+//         if (in == 0)
+//         {
+//             string[index] = string[i];
+//             index++;
+//         }
+
+//     }
+//     string[index] = '\0';
+//     //For removing spaces from beginning
+//     while (string[0] == ' ')
+//     {
+//         for (int i = 0; i < strlen(string); i++)
+//         {
+//             string[i] = string[i+1];
+
+//         }
+
+//     }
+//     //For removing spaces from end
+//     while (string[strlen(string)-1] == ' ')
+//     {
+//         string[strlen(string)- 1] = '\0';
+//     }
+// }
+// int main (){
+
+//     char string[] = "<h1>                    This is the heaading                      </h1>";
+//     printf("This is the string before parsing it%s\n",string);
+//     parser(string);
+//     printf("This is the string after parsing it :-\n-->%s<--\n",string);
+
+// return 0;
+// }
+// /////////////////////////////////////////////////////////////////////////Travel Agency Structure//////////////////////////////////////////////////////////
+// #include<stdio.h>
+// typedef struct travelAgencyManger
+// {
+//     char name[55];
+//     char dlno[55];
+//     int route;
+//     int kms;
+// }dr;
+
+// int main ()
+// {
+//     int n;
+//     dr d[20];
+//     printf("Enter the number of dirvers you want to input\n");
+//     scanf("%d",&n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Enter the name for driver %d\n",i+1);
+//         // scanf("%s", &dr[i].name);
+//         // scanf("%s",&d[i].name);
+//         gets(d[i].name);
+
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Enter the number of Driving Liscense for driver %d\n",i+1);
+//         // scanf("%s", &dr[i].name);
+//         scanf("%s",&d[i].dlno);
+
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Specify the route for driver %d (1,2,or 3)\n",i+1);
+//         // scanf("%s", &dr[i].name);
+//         scanf("%d",&d[i].route);
+
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Enter the kms travelled for driver %d\n",i+1);
+//         // scanf("%s", &dr[i].name);
+//         scanf("%d",&d[i].kms);
+
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Name of driver %d is %s\n",i+1,d[i].name);
+//         printf("Driving Liscense of driver %d is %s\n",i+1,d[i].dlno);
+//         printf("Route of driver %d is %d\n",i+1,d[i].route);
+//         printf("Kms driven for driver %d is %d\n",i+1,d[i].kms);
+//         printf("\n\n");
+
+//     }
+
+// return 0;
+// }
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////////////Snake Water Gun //////////////////////////////////////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////Random Number Generator/////////////////////////////////////////////////////////////////////
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int main (){
+
+//     srand(time(NULL));//Here time function return the second count if we dont initialize to null or 0 it will not givea random number
+//     int random  = (rand()%3)+1;
+//     printf("%d ",random);
+
+// return 0;
+// }
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int game(char you, char comp)
+// {
+
+//     if (you == comp)
+//     {
+//         // printf("Draw\n");
+//         return 0;
+//     }
+//     if (you == 'w',comp == 's')
+//     {
+//         return -1;
+//     }
+//     else if (you == 'w',comp == 'g')
+//     {
+//         return 1;
+//     }
+//     if (you == 's',comp == 'w')
+//     {
+//         return 1;
+//     }
+//     else if (you == 's',comp == 'g')
+//     {
+//         return -1;
+//     }
+//     if (you == 'g',comp == 's')
+//     {
+//         return 1;
+//     }
+//     else if (you == 'g',comp == 'w')
+//     {
+//         return -1;
+//     }
+// }
+// int main (){
+//     char you,comp;
+//     srand(time(NULL));//Here time function return the second count if we dont initialize to null or 0 it will not givea random number
+//     int random  = (rand()%100)+1;
+//     printf("Enter what do you want to choose\nPress 'w' for Water\nPress 's' for Snake\nPress 'g' for Gun\n");
+//     scanf("%c",&you);
+//     if (random >=1 && random<33)
+//     {
+//         comp = 'g';
+//     }
+//     else if (random >=34 && random<66)
+//     {
+//         comp = 's';
+//     }
+//     else
+//     {
+//         comp = 'q';
+//     }
+
+//     int result = game(you,comp);
+//     if (result == 1)
+//     {
+//         printf("You chose %c and Computer chose %c You Win !!",you,comp);
+//     }
+//     else if (result == -1)
+//     {
+//         printf("You chose %c and Computer chose %c You Lose :(",you,comp);
+//     }
+//     else
+//     {
+//         printf("You both chose %c Its a Draw",you);
+//     }
+
+//     return 0;
+// }
+// //////////////////////////////////////////////////////////Matrix Multiplication//////////////////////////////////////////////////////
+// #include <stdio.h>
+// int main()
+// {
+//     int m, n, sum = 0;
+//     int a[3][4], b[4][2], result[3][2];
+//     printf("Enter the first matrix\n");
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 4; j++)
+//         {
+//             // printf("Enter the %d %d element of first matrix\n", i, j);
+//             scanf("%d", &a[i][j]);
+//             // printf("\t");
+//         }
+//         // printf("\n");
+//     }
+//     printf("Enter the second matrix\n");
+//     for (int i = 0; i < 4; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             // printf("Enter the %d %d element of first matrix\n", i, j);
+//             scanf("%d", &b[i][j]);
+//             // printf("\t");
+//         }
+//         // printf("\n");
+//     }
+
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             // Calculate the result
+//             for (int k = 0; k < 4; k++)
+//             {
+//                 sum += a[i][k] * b[k][j];
+//             }
+//             result[i][j] = sum;
+//             sum = 0;
+//         }
+//     }
+
+//     //Print the resultant matrix
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             // Print the result
+//             printf("%d \t", result[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+///////////////////////////////////////////////////Program to check number is a palindrome or not//////////////////////////////////////////////////////////
+// #include<stdio.h>
+// int palindrome(int n)
+// {
+//     int reversed = 0;
+//     while (n!= 0)
+//     {
+//         reversed = reversed*10 + n%10;
+//         n/=10;
+//     }
+
+//     return reversed;
+// }
+// int main (){
+
+//     int n;
+//     printf("Enter the number you want to check it is palindrome or not\n");
+//     scanf("%d",&n);
+//     int reversed = palindrome(n);
+//     if (reversed == n)
+//     {
+//         printf("The number you entered is a palindrome\n");
+//     }
+//     else
+//     {
+//         printf("The number you entered is not a palindrome\n");
+
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<math.h>
+// float Edistance(int x1,int x2,int y1,int y2)
+// {
+//     float distance;
+//     distance = ((x2-x1) * (x2-x1)) + ((y2 -y1) * (y2-y1));
+//     return sqrt(distance);
+// }
+// int main (){
+
+//     int x1,x2,y1,y2;
+//     float distance;
+//     printf("Enter the value of x1\n");
+//     scanf("%d",&x1);
+//     printf("Enter the value of x2\n");
+//     scanf("%d",&x2);
+//     printf("Enter the value of y1\n");
+//     scanf("%d",&y1);
+//     printf("Enter the value of y2\n");
+//     scanf("%d",&y2);
+//     distance = Edistance(x1,x2,y1,y2);
+//     printf("The distance is %.2f",distance);
+
+// return 0;
+// }
+// 10. Write a program in C to separate odd and even integers in separate arrays. Go to the editor
+// Test Data :
+// Input the number of elements to be stored in the array :5
+// Input 5 elements in the array :
+// element - 0 : 25
+// element - 1 : 47
+// element - 2 : 42
+// element - 3 : 56
+// element - 4 : 32
+// Expected Output :
+// The Even elements are :
+// 42 56 32
+// The Odd elements are :
+// 25 47
+// #include <stdio.h>
+// int main()
+// {
+
+//     int arr[35], n, odd[35], even[35];
+//     printf("Enter the number  of elements you want in the array\n");
+//     scanf("%d", &n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Element %d : ", i + 1);
+//         scanf("%d", &arr[i]);
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] % 2 == 0)
+//         {
+//             even[i] = arr[i];
+//             // printf("The even elements are %d  \n",arr[i]);
+//             // printf("The even elements are %d  ", even[i]);
+//         }
+//         else
+//         {
+//             odd[i] = arr[i];
+
+//             // printf("The odd elements are %d   \n",arr[i]);
+//             // printf("The odd elements are %d  ", odd[i]);
+//         }
+//     }
+//     printf("\nThe Even elements are : \n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (even[i] != 0)
+//         {
+//             printf("%d ", even[i]);
+//         }
+//     }
+//     printf("\nThe Odd elements are :\n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (odd[i] != 0)
+//         {
+//             printf("%d ", odd[i]);
+//         }
+//     }
+
+//     return 0;
+// }
