@@ -845,27 +845,27 @@
 // Expected Output :
 // This is a special character.
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     char c ;
-//     printf("Enter the character you want to check is special or not \n") ;
-//     scanf("%c",&c);
-//     if ( c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' )
-//     {
-//         printf("The character is a Alphabet\n");
-//     }
-//     else if (c >= '0' && c <= '9')
-//     {
-//         printf("The character entered is a number\n");
-//     }
-//     else
-//     {
-//         printf("The character entered is a special character");
-//     }
+int main(){
+    char c ;
+    printf("Enter the character you want to check is special or not \n") ;
+    scanf("%c",&c);
+    if ( c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' )
+    {
+        printf("The character is a Alphabet\n");
+    }
+    else if (c >= '0' && c <= '9')
+    {
+        printf("The character entered is a number\n");
+    }
+    else
+    {
+        printf("The character entered is a special character");
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 // 17. Write a C program to check whether an alphabet is a vowel or consonant. Go to the editor
 // Test Data :
